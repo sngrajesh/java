@@ -22,6 +22,7 @@ public class StringMthods {
         int upper = 0;
         int lower = 0;
         int special = 0;
+
         for(char ch : s.toCharArray()){
             if(ch >= 'a' && ch <= 'z'){
                 lower++;

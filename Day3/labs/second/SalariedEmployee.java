@@ -2,7 +2,7 @@ package Day3.labs.second;
 
 public class SalariedEmployee extends Employee {
     protected double basic;
-    SalariedEmployee(String name, int empid, double basic){
+    public SalariedEmployee(String name, int empid, double basic){
         super(name,empid);
         this.basic = basic;
     }
@@ -13,6 +13,7 @@ public class SalariedEmployee extends Employee {
         double da = basic*0.12;
         return basic+da+hra;
     }
+
 
     public double calculateNet(){
         double gross = calculateGross();
