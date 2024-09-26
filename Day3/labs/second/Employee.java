@@ -3,7 +3,7 @@ package Day3.labs.second;
 public abstract class Employee {
     protected String name;
     protected int empid;
-    Employee(String name, int empid){
+    public Employee(String name, int empid){
         this.name = name;
         this.empid = empid;
     }
@@ -12,5 +12,9 @@ public abstract class Employee {
 
     public String toString(){
         return "Employee Data : Name -> "+ this.name + " Id -> " + this.empid;
+    }
+
+    public void displayAllawance() {
+
     }
 }
