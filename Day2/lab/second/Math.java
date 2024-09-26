@@ -66,11 +66,13 @@ public class Math {
         d2.setYear(2022);
         System.out.println(d1 + "\n" + d2);
         swapDates(d1, d2);
+        System.out.println("After swapping dates");
         System.out.println(d1 + "\n" + d2);
 
         // Pass By Reference
         System.out.println("\nPass by reference for array");
         int arr1[] = {3,1,2,4,53,2,4,67};
+        //System.out.println("Arr=" + arr1);
         for (int k : arr1) System.out.print(k + " ");
         System.out.println();
         bubbleSort(arr1);

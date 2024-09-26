@@ -17,6 +17,8 @@ public class WrapperClass {
         Integer autoWrappedNum = num;
         System.out.println("Autoboxed Integer: " + autoWrappedNum);
 
+        System.out.println("Comparing = " + autoWrappedNum.compareTo(6));
+
         // Auto-unboxing (automatic conversion from wrapper to primitive)
         int autoUnwrappedNum = autoWrappedNum;
         System.out.println("Auto-unboxed Integer: " + autoUnwrappedNum);
