@@ -1,12 +1,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Hello and welcome!");
+        //invoing method to get the value
+        int avpro = Runtime.getRuntime().availableProcessors();
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
-
+        //Displaying the value stored in variable "avpro"
+        System.out.println("Available Processors : "+avpro);
     }
 
 }

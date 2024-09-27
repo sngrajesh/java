@@ -251,3 +251,134 @@ public class Store {
     }
 }
 ```
+#### Output 
+```shell
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 1
+
+0 > Name : Chocolate | Price : 20.0/Piece
+1 > Name : Vanilla | Price : 22.0/Piece
+2 > Name : PineApple | Price : 25.0/Piece
+3 > Name : Mango | Price : 30.0/Piece
+4 > Name : Chocolate Chip | Price : 10.0/Dozen
+5 > Name : Oatmeal Raisin | Price : 12.0/Dozen
+6 > Name : Peanut Butter | Price : 15.0/Dozen
+7 > Name : Snickerdoodle | Price : 18.0/Dozen
+8 > Name : Milky Way | Price : 5.0/KG
+9 > Name : Reese's Cup | Price : 6.0/KG
+10 > Name : M&M | Price : 7.0/KG
+11 > Name : Jolly Rancher | Price : 8.0/KG
+Enter Item number : 1
+Enter Quantity of item : 12
+Item Added Successfull!!!!
+
+
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 1
+
+0 > Name : Chocolate | Price : 20.0/Piece
+1 > Name : Vanilla | Price : 22.0/Piece
+2 > Name : PineApple | Price : 25.0/Piece
+3 > Name : Mango | Price : 30.0/Piece
+4 > Name : Chocolate Chip | Price : 10.0/Dozen
+5 > Name : Oatmeal Raisin | Price : 12.0/Dozen
+6 > Name : Peanut Butter | Price : 15.0/Dozen
+7 > Name : Snickerdoodle | Price : 18.0/Dozen
+8 > Name : Milky Way | Price : 5.0/KG
+9 > Name : Reese's Cup | Price : 6.0/KG
+10 > Name : M&M | Price : 7.0/KG
+11 > Name : Jolly Rancher | Price : 8.0/KG
+Enter Item number : 6
+Enter Quantity of item : 2
+Item Added Successfull!!!!
+
+
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 2
+
+Total items in the cart : 14
+
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 3
+
+Total price of products : 279.0
+
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 4
+
+Cart Details:
+Name : Peanut Butter Price :  Quantity : 2 Total Price : 15.0
+Name : Vanilla Price :  Quantity : 12 Total Price : 264.0
+
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 6
+
+Cart Details:
+Name : Peanut Butter Price :  Quantity : 2 Total Price : 15.0
+Name : Vanilla Price :  Quantity : 12 Total Price : 264.0
+Total Items : 14 Total Price : 279.0
+
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 5
+
+Options
+1. Buy Item
+2. Get Total Count
+3. Get Total Bill
+4. View Cart
+5. Clear Cart
+6. Checkout
+0. Exit
+Enter : 0
+
+Process finished with exit code 0
+```

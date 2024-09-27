@@ -12,5 +12,7 @@ public class Printer {
 
         Book nb =new Notebbok("C++", 458);
         p.printData(nb);
+
+        nb.foo();
     }
 }
