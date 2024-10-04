@@ -90,25 +90,31 @@ public class EmployeeStream {
         empstream.filter(salrange).forEach(System.out::println);
 
 
+        // Grouping Employee by Department
         System.out.println("\nGrouping Employee by Department");
         empstream = employeelist.stream();
         Map<String, List<Employee>> groupedEmployee = employeelist.stream().collect(Collectors.groupingBy(Employee::getDepartment));
         groupedEmployee.forEach((k, v) -> System.out.println(k + " -> " + v));
 
+
+        // Grouping Employee by Department with counting
         System.out.println("\nGrouping Employee by Department with counting");
         empstream = employeelist.stream();
         Map<String, Long> groupedEmployee_count = employeelist.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
         groupedEmployee_count.forEach((k, v) -> System.out.println(k + " -> " + v));
 
+
+        // Grouping Employee by Department with Summing salary
         System.out.println("\nGrouping Employee by Department with Summing salary");
         Map<String, Double> groupedEmployeeCount = employeelist.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.summingDouble(Employee::getSalary)));
         groupedEmployeeCount.forEach((k, v) -> System.out.println(k + " -> " + v));
 
+        // Employee Id with Department
         System.out.println("\nEmployee Id with Department");
         empstream = employeelist.stream();
         empstream.map(em -> new Department(em.getEmpid(), em.getDepartment())).forEach(System.out::println);
 
-
+        // Employee Total Salary
         System.out.println("\nEmployee Total Salary");
         empstream = employeelist.stream();
         double salaryxpense = empstream.mapToDouble(Employee::getSalary).reduce(0.0, (a, b) -> a + b);

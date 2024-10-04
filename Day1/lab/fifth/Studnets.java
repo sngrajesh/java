@@ -1,4 +1,4 @@
-package day1.lab.fifth;
+package Day1.lab.fifth;
 
 public class Studnets {
     private static int total;

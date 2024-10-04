@@ -21,7 +21,7 @@ public class StreamsWithObjects {
 
         System.out.println("\nExample 2: Filter prime numbers and print them using parallel stream");
         stream = list.parallelStream();
-        stream.filter(day1.lab.second.Math::isPrime).collect(Collectors.toList()).forEach(System.out::println);
+        stream.filter(Day1.lab.second.Math::isPrime).collect(Collectors.toList()).forEach(System.out::println);
 
         System.out.println("\nExample 3: Print distinct numbers in sorted order");
         stream = list.stream();
