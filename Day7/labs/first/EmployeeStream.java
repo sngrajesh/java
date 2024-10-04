@@ -61,27 +61,29 @@ public class EmployeeStream {
         Stream<Employee> empstream;
         // empstream.forEach(System.out::println);
 
+        // Employee sorted by name
         System.out.println("\nEmployee sorted by name");
         Comparator<Employee> cmpbyname = Comparator.comparing(Employee::getName);
         empstream = employeelist.stream();
         empstream.sorted(cmpbyname).forEach(System.out::println);
 
-
+        // Employee sorted by salary
         System.out.println("\nEmployee sorted by salary");
         Comparator<Employee> cmpbysalary = Comparator.comparing(Employee::getSalary);
         empstream = employeelist.stream();
         empstream.sorted(cmpbysalary).forEach(System.out::println);
 
+        // Employee sorted List Department
         System.out.println("\nEmployee sorted List Department");
         empstream = employeelist.stream();
         empstream.sorted(Comparator.comparing(Employee::getDepartment)).forEach(System.out::println);
 
-
+        // Filter Employee List by Skills -> Java
         System.out.println("\nFilter Employee List by Skills -> Java");
         empstream = employeelist.stream();
         empstream.filter(emp -> emp.getSkillset().contains("Java")).forEach(System.out::println);
 
-
+        // Filter Employee List by Salary -> 45000 to 50000
         System.out.println("\nFilter Employee List by Salary -> 45000 to 50000");
         empstream = employeelist.stream();
         Predicate<Employee> salrange = emp -> (emp.getSalary() < 45000 & emp.getSalary() > 25000);
