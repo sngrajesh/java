@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class EmployeeStream {
-
+    // Function to initialize List of Employees
     public List<Employee> initializeEmployeeStreamData() {
         List<Employee> employeelist = new ArrayList<>();
         Set<String> skillset1 = new TreeSet<>();
