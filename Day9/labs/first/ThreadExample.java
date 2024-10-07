@@ -1,4 +1,4 @@
-package Day9.home.first;
+package Day9.labs.first;
 
 public class ThreadExample {
     public static void main(String[] args) throws InterruptedException {

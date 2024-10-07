@@ -1,6 +1,6 @@
 package Day9.labs.second;
 
-public class SynchronizedExample3 {
+public class SynchronizedWithOtherClassImplementedSync {
     public static void main(String[] args) {
         Counter c = new Counter();
         new Thread(() -> {

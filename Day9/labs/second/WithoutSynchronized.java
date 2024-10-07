@@ -1,6 +1,6 @@
 package Day9.labs.second;
 
-public class SynchronizedExample1 {
+public class WithoutSynchronized {
     public static void main(String[] args) {
         Counter c = new Counter();
         new Thread(()->{

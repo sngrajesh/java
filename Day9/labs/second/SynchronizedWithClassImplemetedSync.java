@@ -1,6 +1,6 @@
 package Day9.labs.second;
 
-public class SynchronizedExample2 {
+public class SynchronizedWithClassImplemetedSync {
     public static void main(String[] args) {
         SyncCounter c = new SyncCounter();
         new Thread(()->{

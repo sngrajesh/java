@@ -288,8 +288,134 @@ public class TemporalAdjusterExample {
 ```
 First Monday of next month: 2024-11-04
 ```
----
 
+### Formatting and parsing dates and times in Java:
+
+### 1. **DateTimeFormatter**
+`DateTimeFormatter` is used to define patterns for formatting and parsing date-time objects.
+
+### Common Date-Time Classes:
+- `LocalDate` – Deals with dates (no time).
+- `LocalTime` – Deals with times (no date).
+- `LocalDateTime` – Deals with both date and time.
+
+### 2. **Formatting a Date-Time**
+
+You can create custom date-time formats by using `DateTimeFormatter`.
+
+#### Example 1: Formatting `LocalDate`
+```java
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class DateFormatExample {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String formattedDate = date.format(formatter);
+        System.out.println("Formatted Date: " + formattedDate);  // Output: Formatted Date: 07/10/2024
+    }
+}
+```
+
+#### Example 2: Formatting `LocalDateTime`
+```java
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeFormatExample {
+    public static void main(String[] args) {
+        LocalDateTime dateTime = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String formattedDateTime = dateTime.format(formatter);
+        System.out.println("Formatted Date-Time: " + formattedDateTime);  // Output: Formatted Date-Time: 07-10-2024 14:30:45
+    }
+}
+```
+
+### 3. **Parsing a Date-Time String**
+
+You can also parse a string into a `LocalDate`, `LocalTime`, or `LocalDateTime` object using the same `DateTimeFormatter`.
+
+#### Example 1: Parsing `LocalDate`
+```java
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class DateParseExample {
+    public static void main(String[] args) {
+        String dateStr = "07/10/2024";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate date = LocalDate.parse(dateStr, formatter);
+        System.out.println("Parsed Date: " + date);  // Output: Parsed Date: 2024-10-07
+    }
+}
+```
+
+#### Example 2: Parsing `LocalDateTime`
+```java
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeParseExample {
+    public static void main(String[] args) {
+        String dateTimeStr = "07-10-2024 14:30:45";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        LocalDateTime dateTime = LocalDateTime.parse(dateTimeStr, formatter);
+        System.out.println("Parsed Date-Time: " + dateTime);  // Output: Parsed Date-Time: 2024-10-07T14:30:45
+    }
+}
+```
+
+### 4. **Predefined Formatters**
+
+Java provides some predefined `DateTimeFormatter` instances, such as:
+- `DateTimeFormatter.ISO_LOCAL_DATE` (e.g., `2024-10-07`)
+- `DateTimeFormatter.ISO_LOCAL_TIME` (e.g., `14:30:45`)
+- `DateTimeFormatter.ISO_LOCAL_DATE_TIME` (e.g., `2024-10-07T14:30:45`)
+
+#### Example: Using Predefined Formatter
+```java
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class PredefinedFormatterExample {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        String formattedDate = date.format(DateTimeFormatter.ISO_LOCAL_DATE);
+        System.out.println("ISO Formatted Date: " + formattedDate);  // Output: ISO Formatted Date: 2024-10-07
+    }
+}
+```
+
+### 5. **Pattern Symbols**
+
+When defining custom patterns for `DateTimeFormatter`, you can use various symbols:
+- `y` – Year (`yyyy` for 4 digits, `yy` for 2 digits).
+- `M` – Month (`MM` for numeric, `MMM` for short text, `MMMM` for full text).
+- `d` – Day of month.
+- `H` – Hour (24-hour clock).
+- `h` – Hour (12-hour clock).
+- `m` – Minute.
+- `s` – Second.
+- `a` – AM/PM marker.
+- `E` – Day of the week (`EEE` for short, `EEEE` for full).
+
+### Example of Pattern Symbols:
+```java
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class CustomFormatExample {
+    public static void main(String[] args) {
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy HH:mm:ss a");
+        String formattedDate = now.format(formatter);
+        System.out.println("Formatted Date-Time: " + formattedDate);  // Output: Monday, Oct 07, 2024 14:30:45 PM
+    }
+}
+```
+---
 ### Key Points to Remember:
 - **Immutable and Thread-Safe**: Classes in `java.time` are immutable and thread-safe.
 - **Time Zones**: Use `ZonedDateTime` or `OffsetDateTime` when working with time zones.
