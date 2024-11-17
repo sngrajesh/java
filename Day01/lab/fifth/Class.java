@@ -1,4 +1,4 @@
-package Day1.lab.fifth;
+package Day01.lab.fifth;
 
 public class Class {
     public static void main(String[] args) {

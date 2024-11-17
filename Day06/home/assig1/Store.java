@@ -1,4 +1,4 @@
-package Day6.home.assig1;
+package Day06.home.assig1;
 
 import java.util.HashMap;
 import java.util.List;

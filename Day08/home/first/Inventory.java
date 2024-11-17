@@ -1,4 +1,4 @@
-package Day8.home.first;
+package Day08.home.first;
 
 import java.util.*;
 import java.util.function.Function;

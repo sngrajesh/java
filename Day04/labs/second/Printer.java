@@ -1,4 +1,4 @@
-package Day4.labs.second;
+package Day04.labs.second;
 
 public class Printer {
     public void printData(Printable p){

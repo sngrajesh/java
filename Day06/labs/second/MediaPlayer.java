@@ -1,4 +1,4 @@
-package Day6.labs.second;
+package Day06.labs.second;
 
 import java.util.ArrayList;
 import java.util.List;

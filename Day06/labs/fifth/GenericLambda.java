@@ -1,4 +1,4 @@
-package Day6.labs.fifth;
+package Day06.labs.fifth;
 
 public class GenericLambda
 {

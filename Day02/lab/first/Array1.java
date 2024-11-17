@@ -1,5 +1,5 @@
-package Day2.lab.first;
-import Day1.lab.first.Date;
+package Day02.lab.first;
+import Day01.lab.first.Date;
 
 class Array1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Day5.labs.first;
+package Day05.labs.first;
 
 public class CustomExceptionUse {
     public static String convertToLowerCase(String str) throws CustomException {

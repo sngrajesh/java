@@ -1,4 +1,4 @@
-package Day1.lab.fourth;
+package Day01.lab.fourth;
 
 public class Date {
     // variables declaration

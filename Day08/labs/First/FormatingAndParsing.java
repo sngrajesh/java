@@ -1,4 +1,4 @@
-package Day8.labs.First;
+package Day08.labs.First;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

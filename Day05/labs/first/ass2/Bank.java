@@ -1,6 +1,6 @@
-package Day5.labs.first.ass2;
+package Day05.labs.first.ass2;
 
-import Day5.labs.first.ass2.Excpetions.*;
+import Day05.labs.first.ass2.Excpetions.*;
 
 import java.util.Scanner;
 

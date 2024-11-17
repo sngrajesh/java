@@ -1,4 +1,4 @@
-package Day7.labs.first;
+package Day07.labs.first;
 
 import java.util.*;
 import java.util.function.Predicate;

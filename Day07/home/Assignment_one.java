@@ -1,4 +1,4 @@
-package Day7.home;
+package Day07.home;
 
 import java.util.Arrays;
 import java.util.Comparator;

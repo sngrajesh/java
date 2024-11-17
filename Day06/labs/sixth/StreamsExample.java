@@ -1,4 +1,4 @@
-package Day6.labs.sixth;
+package Day06.labs.sixth;
 
 import java.util.*;
 import java.util.stream.Collectors;

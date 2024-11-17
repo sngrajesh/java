@@ -1,4 +1,4 @@
-package Day5.labs.first.ass1;
+package Day05.labs.first.ass1;
 
 import java.util.Scanner;
 

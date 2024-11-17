@@ -1,4 +1,4 @@
-package Day4.labs.first;
+package Day04.labs.first;
 
 public class IceCream extends Dessert {
     public IceCream(String name, double price) {

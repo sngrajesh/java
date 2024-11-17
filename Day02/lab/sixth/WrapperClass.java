@@ -1,4 +1,4 @@
-package Day2.lab.sixth;
+package Day02.lab.sixth;
 
 public class WrapperClass {
     public static void main(String[] args) {

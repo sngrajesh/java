@@ -1,4 +1,4 @@
-package Day4.labs.second;
+package Day04.labs.second;
 
 public class Notebbok extends Book{
 

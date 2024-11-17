@@ -27,12 +27,13 @@ The Toy data has
 ```
 
 #### Class - Date
+
 ```java
-package Day8.home.first;
+package Day08.home.first;
 
 import java.util.Comparator;
 
-public class Date implements Comparable{
+public class Date implements Comparable {
     private int year;
     private int month;
 
@@ -79,8 +80,9 @@ class DateComparator implements Comparator<Date> {
 ```
 
 #### Enum - Category
+
 ```java
-package Day8.home.first;
+package Day08.home.first;
 
 public enum Category {
     EDUCATIONAL("Educational"),
@@ -101,8 +103,9 @@ public enum Category {
 ```
 
 #### Class - Toy
+
 ```java
-package Day8.home.first;
+package Day08.home.first;
 
 import java.util.Comparator;
 
@@ -178,7 +181,7 @@ public class Toy implements Comparable<Toy> {
                 ", price=" + price +
                 ", category=" + category +
                 ", age=" + age +
-                ", date=" + date ;
+                ", date=" + date;
     }
 
     @Override
@@ -224,8 +227,9 @@ class ToyAgeComparator implements Comparator<Toy> {
 ```
 
 #### Class - Inventory
+
 ```java
-package Day8.home.first;
+package Day08.home.first;
 
 import java.util.*;
 import java.util.function.Function;
@@ -361,8 +365,9 @@ public class Inventory {
 ```
 
 #### Class - Store
+
 ```java
-package Day8.home.first;
+package Day08.home.first;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -441,7 +446,7 @@ public class Store {
 
 
         // Group by category
-        Map<Category, HashMap<Toy, Integer>> groupByCategory = Inventory.groupBySpecificField(inventoryMap,  Toy::getCategory);
+        Map<Category, HashMap<Toy, Integer>> groupByCategory = Inventory.groupBySpecificField(inventoryMap, Toy::getCategory);
 
         // Group by specific field by category then Sorting each category by price using ToyPriceComparator class
         for (Map.Entry<Category, HashMap<Toy, Integer>> entry : groupByCategory.entrySet()) {
@@ -641,8 +646,9 @@ d. Set of hashtags (one tweet can have many hashtags e.g. #puneralns, #flood, Pa
 ``` 
 
 #### Class - Tweet
+
 ```java
-package Day8.home.second;
+package Day08.home.second;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -716,8 +722,9 @@ public class Tweet {
 ```
 
 #### Class - Tweeter
+
 ```java
-package Day8.home.second;
+package Day08.home.second;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -754,7 +761,7 @@ public class Tweeter {
         Random random = new Random();
         String subject = "Tweet-" + random.nextInt(100);
         String body = "Tweet body-" + random.nextInt(100);
-        LocalDateTime date =  generateRandomDateTime();
+        LocalDateTime date = generateRandomDateTime();
         int views = random.nextInt(12000);
         HashSet<String> hashtags = getHashtags(1 + random.nextInt(5));
         return new Tweet(subject, body, date, views, hashtags);

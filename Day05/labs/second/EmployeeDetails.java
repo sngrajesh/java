@@ -1,4 +1,4 @@
-package Day5.labs.second;
+package Day05.labs.second;
 
 import java.util.Comparator;
 import java.util.Set;

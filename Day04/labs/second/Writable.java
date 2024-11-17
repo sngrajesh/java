@@ -1,4 +1,4 @@
-package Day4.labs.second;
+package Day04.labs.second;
 
 public interface Writable{
     public void write();

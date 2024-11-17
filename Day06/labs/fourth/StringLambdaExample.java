@@ -1,4 +1,4 @@
-package Day6.labs.fourth;
+package Day06.labs.fourth;
 
 public class StringLambdaExample {
 

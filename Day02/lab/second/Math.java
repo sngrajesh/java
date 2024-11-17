@@ -1,6 +1,6 @@
-package Day2.lab.second;
+package Day02.lab.second;
 
-import Day1.lab.fourth.Date;
+import Day01.lab.fourth.Date;
 
 public class Math {
 

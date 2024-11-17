@@ -1,4 +1,4 @@
-package Day6.labs.second;
+package Day06.labs.second;
 
 public class Songs extends Media {
     private int songId;

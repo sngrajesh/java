@@ -1,4 +1,4 @@
-package Day3.labs.first;
+package Day03.labs.first;
 public class StringClass {
     public static void main(String[] args) {
         // Two String literals s1 and s2 with the same value "Java"

@@ -1,4 +1,4 @@
-package Day6.home.assig1;
+package Day06.home.assig1;
 
 public class Date implements Comparable{
     private int year;

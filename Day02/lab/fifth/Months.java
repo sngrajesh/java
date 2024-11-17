@@ -1,4 +1,4 @@
-package Day2.lab.fifth;
+package Day02.lab.fifth;
 
 public enum Months {
     JANUARY("January"),

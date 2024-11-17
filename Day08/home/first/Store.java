@@ -1,4 +1,4 @@
-package Day8.home.first;
+package Day08.home.first;
 
 import java.util.HashMap;
 import java.util.Map;

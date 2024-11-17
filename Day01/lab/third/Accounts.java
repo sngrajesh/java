@@ -1,4 +1,4 @@
-package Day1.lab.third;
+package Day01.lab.third;
 
 public class Accounts {
 

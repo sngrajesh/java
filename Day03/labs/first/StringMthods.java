@@ -1,4 +1,4 @@
-package Day3.labs.first;
+package Day03.labs.first;
 import java.util.Arrays;
 
 public class StringMthods {

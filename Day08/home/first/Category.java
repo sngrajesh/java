@@ -1,4 +1,4 @@
-package Day8.home.first;
+package Day08.home.first;
 
 public enum Category {
     EDUCATIONAL("Educational"),

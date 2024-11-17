@@ -1,4 +1,4 @@
-package Day5.labs.first.ass2;
+package Day05.labs.first.ass2;
 
 public class User {
     private String name;

@@ -1,4 +1,4 @@
-package Day5.labs.first;
+package Day05.labs.first;
 
 public class ExceptionHandlingWithDeclaration {
 

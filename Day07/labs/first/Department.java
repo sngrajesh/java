@@ -1,4 +1,4 @@
-package Day7.labs.first;
+package Day07.labs.first;
 
 public class Department {
     private int empid;

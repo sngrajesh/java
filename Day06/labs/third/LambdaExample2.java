@@ -1,4 +1,4 @@
-package Day6.labs.third;
+package Day06.labs.third;
 
 import java.util.List;
 import java.util.Arrays;

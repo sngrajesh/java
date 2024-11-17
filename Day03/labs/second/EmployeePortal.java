@@ -1,4 +1,4 @@
-package Day3.labs.second;
+package Day03.labs.second;
 
 public class EmployeePortal {
     public static void main(String[] args) {

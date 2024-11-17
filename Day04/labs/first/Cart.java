@@ -1,4 +1,4 @@
-package Day4.labs.first;
+package Day04.labs.first;
 
 import java.util.HashMap;
 

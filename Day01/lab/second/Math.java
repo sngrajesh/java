@@ -1,4 +1,4 @@
-package Day1.lab.second;
+package Day01.lab.second;
 
 public class Math {
     public static long factorial(int num) {

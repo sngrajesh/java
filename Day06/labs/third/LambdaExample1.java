@@ -1,4 +1,4 @@
-package Day6.labs.third;
+package Day06.labs.third;
 
 public class LambdaExample1 {
 

@@ -1,4 +1,4 @@
-package Day6.labs.first;
+package Day06.labs.first;
 
 public class BounedGenerics<T extends Number> {
     T[] data;

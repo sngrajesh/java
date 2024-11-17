@@ -5,8 +5,9 @@
 
 
 #### Enum - Categories
+
 ```java
-package Day6.home.assig1;
+package Day06.home.assig1;
 
 public enum Categories {
     EDUCATIONAL("Educational"),
@@ -29,10 +30,11 @@ public enum Categories {
 ---
 
 #### Date Class
-```java
-package Day6.home.assig1;
 
-public class Date implements Comparable{
+```java
+package Day06.home.assig1;
+
+public class Date implements Comparable {
     private int year;
     private int month;
 
@@ -70,8 +72,9 @@ public class Date implements Comparable{
 ---
 
 #### Toy Class
+
 ```java
-package Day6.home.assig1;
+package Day06.home.assig1;
 
 import java.util.Comparator;
 
@@ -183,8 +186,9 @@ class ToyPriceComparator implements Comparator<Toy> {
 ---
 
 #### Stock class
+
 ```java
-package Day6.home.assig1;
+package Day06.home.assig1;
 
 import java.util.*;
 
@@ -310,9 +314,9 @@ public class Stock {
         for (Toy toy : stockMap.keySet()) {
             System.out.println(
                     "Id: " + toy.getId() +
-                    " | Name :" + toy.getName() +
-                    " | Purchase Date: " + toy.getPurchaseDate() +
-                    " | Quantity: " + stockMap.get(toy));
+                            " | Name :" + toy.getName() +
+                            " | Purchase Date: " + toy.getPurchaseDate() +
+                            " | Quantity: " + stockMap.get(toy));
         }
     }
 
@@ -323,8 +327,9 @@ public class Stock {
 ---
 
 #### Store class
+
 ```java
-package Day6.home.assig1;
+package Day06.home.assig1;
 
 import java.util.HashMap;
 import java.util.List;

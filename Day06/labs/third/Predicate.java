@@ -1,4 +1,4 @@
-package Day6.labs.third;
+package Day06.labs.third;
 
 
 // The class which has only one abstract method is a functional interface

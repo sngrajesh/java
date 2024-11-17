@@ -5,8 +5,9 @@
 
 
 #### Base class (abstract) `Dessert`
+
 ```java
-package Day4.labs.first;
+package Day04.labs.first;
 
 public abstract class Dessert {
     private String name;
@@ -34,8 +35,9 @@ public abstract class Dessert {
 
 
 #### Child class Cookies of class `Dessert`
+
 ```java
-package Day4.labs.first;
+package Day04.labs.first;
 
 public class Cookies extends Dessert {
     public Cookies(String name, double price) {
@@ -46,9 +48,10 @@ public class Cookies extends Dessert {
     public double calculatePrice(int quantity) {
         return getPrice() * Math.ceil(quantity / 12.0); // Price per dozen
     }
+
     @Override
     public String toString() {
-        return "Name : " + this.getName() + " | Price : " + this.getPrice()+  "/Dozen";
+        return "Name : " + this.getName() + " | Price : " + this.getPrice() + "/Dozen";
     }
 }
 ```
@@ -56,8 +59,9 @@ public class Cookies extends Dessert {
 
 
 #### Child class Candies of class `Dessert`
+
 ```java
-package Day4.labs.first;
+package Day04.labs.first;
 
 public class Candies extends Dessert {
     public Candies(String name, double price) {
@@ -71,7 +75,7 @@ public class Candies extends Dessert {
 
     @Override
     public String toString() {
-        return "Name : " + this.getName() + " | Price : " + this.getPrice()+  "/KG";
+        return "Name : " + this.getName() + " | Price : " + this.getPrice() + "/KG";
     }
 }
 ```
@@ -79,8 +83,9 @@ public class Candies extends Dessert {
 
 
 #### Child class Ice-Cream of class `Dessert`
+
 ```java
-package Day4.labs.first;
+package Day04.labs.first;
 
 public class IceCream extends Dessert {
     public IceCream(String name, double price) {
@@ -94,7 +99,7 @@ public class IceCream extends Dessert {
 
     @Override
     public String toString() {
-        return "Name : " + this.getName() + " | Price : " + this.getPrice()+  "/Piece";
+        return "Name : " + this.getName() + " | Price : " + this.getPrice() + "/Piece";
     }
 }
 
@@ -104,11 +109,11 @@ public class IceCream extends Dessert {
 
 
 #### class Cart
+
 ```java
-package Day4.labs.first;
+package Day04.labs.first;
 
 import java.util.HashMap;
-
 
 
 public class Cart {
@@ -120,46 +125,46 @@ public class Cart {
     }
 
     public void addToCart(Dessert dessert, int quantity) {
-        if(this.desserts.containsKey(dessert)){
-            quantity = quantity+desserts.get(dessert);
+        if (this.desserts.containsKey(dessert)) {
+            quantity = quantity + desserts.get(dessert);
         }
         this.desserts.put(dessert, quantity);
     }
 
     public int getTotalCount() {
         int totalCOunt = 0;
-        for(int ct : desserts.values()){
-            totalCOunt+= ct;
+        for (int ct : desserts.values()) {
+            totalCOunt += ct;
         }
         return totalCOunt;
     }
 
     public double getTotalBill() {
         double totalBill = 0;
-        for(Dessert dt : desserts.keySet()){
+        for (Dessert dt : desserts.keySet()) {
             int qunat = desserts.get(dt);
             totalBill += dt.calculatePrice(qunat);
         }
         return totalBill;
     }
 
-    public void clearCart(){
+    public void clearCart() {
         desserts.clear();
     }
 
     public void printCart() {
         System.out.println("\nCart Details:");
-        for(Dessert dt : desserts.keySet()){
+        for (Dessert dt : desserts.keySet()) {
             int qunat = desserts.get(dt);
-            System.out.println("Name : " + dt.getName()+ " Price : " + " Quantity : " + qunat + " Total Price : "+ dt.calculatePrice(qunat));
+            System.out.println("Name : " + dt.getName() + " Price : " + " Quantity : " + qunat + " Total Price : " + dt.calculatePrice(qunat));
         }
     }
 
-    public void checkout(){
+    public void checkout() {
         int totalItems = this.getTotalCount();
-        double aggreatePrice =  this.getTotalBill();
+        double aggreatePrice = this.getTotalBill();
         this.printCart();
-        System.out.println("Total Items : " +totalItems + " Total Price : "+ aggreatePrice);
+        System.out.println("Total Items : " + totalItems + " Total Price : " + aggreatePrice);
         this.clearCart();
     }
 }
@@ -169,8 +174,10 @@ public class Cart {
 
 
 #### class Store
+
 ```java
-package Day4.labs.first;
+package Day04.labs.first;
+
 import java.util.Scanner;
 
 public class Store {
@@ -189,21 +196,21 @@ public class Store {
             new Candies("Jolly Rancher", 8),
     };
 
-    public static void buyItem(Cart cart){
+    public static void buyItem(Cart cart) {
         System.out.println();
-        for(int i = 0; i < items.length; i++){
+        for (int i = 0; i < items.length; i++) {
             System.out.println(i + " > " + items[i]);
         }
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Item number : ");
         int itemno = scanner.nextInt();
-        if(itemno >= items.length){
+        if (itemno >= items.length) {
             System.out.println("Item not exist!!!!\n");
             return;
         }
         System.out.print("Enter Quantity of item : ");
         int qunat = scanner.nextInt();
-        cart.addToCart(items[itemno],qunat );
+        cart.addToCart(items[itemno], qunat);
         System.out.println("Item Added Successfull!!!!\n");
     }
 

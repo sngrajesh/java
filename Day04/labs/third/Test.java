@@ -1,4 +1,4 @@
-package Day4.labs.third;
+package Day04.labs.third;
 
 public class Test {
     public static void main(String[] args) throws CloneNotSupportedException {

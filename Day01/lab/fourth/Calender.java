@@ -1,4 +1,4 @@
-package Day1.lab.fourth;
+package Day01.lab.fourth;
 
 public class Calender {
     public static void main(String[] args) {
